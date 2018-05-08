@@ -36,7 +36,21 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-
+        
+	<distributionManagement>
+	<repository>
+		<id>Release</id>
+		<name></name>
+		<url>http://35.231.159.69:8081/repository/maven-releases/</url>
+	</repository>
+ 
+	<snapshotsRepository>
+		<id>Release</id>
+		<name>maven-snapshots</name>
+		<url>http://35.231.159.69:8081/repository/maven-snapshots/</url>
+	</snapshotRepository>
+        </distributionManagement>
+	
 	<build>
 		<plugins>
 			<plugin>
@@ -65,6 +79,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 </project>
